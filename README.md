@@ -16,7 +16,7 @@
 
 ## The following flow illustrates the core MVVM Pattern
 
-![MVVM](https://cdn.journaldev.com/wp-content/uploads/2018/04/android-mvvm-pattern.png)
+![MVVM](https://journaldev.nyc3.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png)
 
 ## How does this differ from MVP?
 
@@ -31,7 +31,6 @@
 ## For more information about this architecture code, you can refer to some of these links
 
 * [Architecture Code](https://github.com/maiconhellmann/kotlin-mvvm-coroutines-koin)
-* [Ready for Koin 2.0](https://medium.com/koin-developers/ready-for-koin-2-0-2722ab59cac3)
 * [Android Data Binding](https://medium.com/@temidjoy/android-jetpack-empower-your-ui-with-android-data-binding-94a657cb6be1)
 * [Android VIP](https://speakerdeck.com/androidvip)
 * [Multidex](https://proandroiddev.com/android-jetpack-foundation-multidex-part-1-chapter-3-64a3e43c92dc)
