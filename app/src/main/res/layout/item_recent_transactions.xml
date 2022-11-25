@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.mnc.network.model.Transaction" />
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/root_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/mirage"
+        tools:layout_width="152dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:cardBackgroundColor="@color/white_30"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="112dp"
+                    android:layout_height="104dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_rounded_18"
+                    android:imageSource="@{item.image}"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/sample_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableEnd="@{item.favorite ? @drawable/ic_star : @drawable/ic_star_white, default=@drawable/ic_star_white}"
+                    android:lines="2"
+                    android:text="@{item.name}"
+                    android:textColor="@color/white"
+                    tools:text="Cassie\nCaitlyn" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</layout>
